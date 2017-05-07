@@ -1,0 +1,64 @@
+{
+  "name": "reddis-twitter-feed-rectjs-flux",
+  "version": "0.0.1",
+  "description": "ReactJS with Flux.",
+  "repository": "",
+  "main": "server.js",
+  "dependencies": {
+    "events": "^1.1.1",
+    "express": "^4.15.2",
+    "flux": "^3.1.2",
+    "keymirror": "^0.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "twitter": "^1.7.0",
+    "underscore": "^1.8.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "jest": "^20.0.0",
+    "jest-cli": "^20.0.0",
+    "jest-fetch-mock": "^1.1.1",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.5.1"
+  },
+  "scripts": {
+    "start": "npm run webpack-watch & node server.js",
+    "postinstall": "webpack --config webpack.config.js",
+    "webpack": "webpack --config webpack.config.js",
+    "webpack-watch": "webpack --config webpack.config.js --watch --colors",
+    "test": "jest"
+  },
+  "author": "Himadri Ganguly",
+  "license": "GPL-3.0",
+  "jest": {
+    "verbose": true,
+    "rootDir": "./js",
+    "setupFiles": [
+      "./test-env.js"
+    ],
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
+  }
+}
