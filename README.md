@@ -21,7 +21,7 @@ This application will fetch Twitter and Reddit feed and display it on the webpag
 
 ```
 npm install
-open **config.js** file and enter the twitter required credentials
+open config.js file and enter the twitter required credentials
 npm start
 open http://localhost:3000
 ```
