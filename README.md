@@ -12,6 +12,11 @@ This application will fetch Twitter and Reddit feed and display it on the webpag
 5. react
 6. flux
 
+## Application ScreenShot
+
+![ReactJs Social Feed Display](https://raw.githubusercontent.com/himadriganguly/reddit-twitter-feed-rectjs-flux/master/screenshots/screenshot.png "ReactJs Social Feed Display")
+
+
 ### Usage
 
 ```
